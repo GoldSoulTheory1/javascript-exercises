@@ -1,26 +1,37 @@
-const add = function() {
-	
+const add = function(a, b) {
+  return a + b;
 };
 
-const subtract = function() {
-	
+const subtract = function(a, b) {
+  return a - b;
 };
 
-const sum = function() {
-	
+const multiply = function(a, b) {
+  return a * b;
 };
 
-const multiply = function() {
-
+const divide = function(a, b) {
+  if (b === 0) {
+    return "Error: division by zero";
+  }
+  return a / b;
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+  return Math.pow(a, b);
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+  if (a < 0) {
+    return "Error: factorial of negative number";
+  }
+  let result = 1;
+  for (let i = 1; i <= a; i++) {
+    result *= i;
+  }
+  return result;
 };
+
 
 // Do not edit below this line
 module.exports = {
